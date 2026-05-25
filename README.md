@@ -1,137 +1,94 @@
-# Ex.No.6 Development of Python Code Compatible with Multiple AI Tools
-# Register No: 212223040049
+# EX.NO.6: Development of Python Code Compatible with Multiple AI Tools
 
-# Aim
+## NAME : M.Gokul Anand
 
-To develop a Python program that connects with multiple AI tools and automatically sends prompts, collects responses, compares the outputs, and produces useful insights from the generated results.
+## REG NO. : 212223040049
 
-# Explanation
+---
 
-In this experiment, the persona pattern is applied by assuming the role of a software developer working in healthcare applications. The program interacts with different AI platforms and generates responses for the same prompt.
+# 1. Aim
 
-By using multiple AI tools, we can analyze how each AI system responds to the same query. The responses are then compared to understand which AI tool provides clearer, more accurate, and more useful results.
+<p1>The aim of this experiment is to practice prompt engineering techniques for generating Python programs that interact with multiple AI tools. Instead of directly writing code, prompts are designed to guide AI systems to generate Python code, compare outputs from different AI APIs, and provide useful insights based on the generated results.</p1><br>
 
-This approach helps developers select the most suitable AI system for specific applications such as healthcare support systems, automated assistants, or research tools.
+---
 
-# Objective
+# 2. Objective
 
-The main objective of this experiment is to design Python code that communicates with different AI platforms such as ChatGPT, Claude, and Gemini through their APIs.
+<p1>The primary objective of this experiment is to understand how carefully designed prompts can help AI systems generate effective Python code for multi-AI integration. The experiment focuses on:</p1>
 
-The program performs the following tasks:
+<ul>
+<li>Generating Python code for interacting with multiple AI APIs.</li>
+<li>Comparing outputs generated from different AI tools.</li>
+<li>Producing insights and recommendations based on AI responses.</li>
+<li>Evaluating the effectiveness of prompts used during each stage.</li>
+</ul><br>
 
-• Sends the same prompt to multiple AI systems
-• Collects and stores their responses
-• Compares the outputs using evaluation metrics
-• Provides insights about the performance of each AI tool
+---
 
-This helps in understanding how different AI models respond to the same information.
+# 3. Explanation
 
-# Use Case
-Healthcare Symptom Analysis System
+<p1>In this experiment, prompt engineering techniques are used to instruct AI systems to create Python programs capable of interacting with multiple AI platforms such as ChatGPT, Claude, and Gemini. Instead of manually coding the solution, carefully structured prompts are given to the AI system to automatically generate the required code and explanations.</p1><br>
 
-The system analyzes patient symptoms using different AI tools. Doctors or healthcare staff can enter patient symptoms, and the AI tools provide possible diagnoses and suggestions for treatment.
+<p1>The experiment demonstrates how prompts can influence the quality of AI-generated outputs. Different prompt styles are used to generate Python code, compare responses from multiple AI systems, and analyze the usefulness of each AI-generated response.</p1><br>
 
-Using multiple AI responses allows healthcare professionals to compare suggestions and make more informed medical decisions.
+---
 
-# AI Tools Required
+# 4. Use Case
 
-The following AI platforms are used in this experiment:
+## Healthcare Symptom Analysis System
 
-• ChatGPT – Generates detailed explanations and suggestions
-• Claude – Provides structured and analytical responses
-• Gemini – Generates concise and quick answers
+<p1>The selected use case for this experiment is a healthcare symptom analysis system. Doctors or healthcare staff enter patient symptoms, and multiple AI systems generate possible diagnoses and recommendations. Comparing outputs from different AI tools helps healthcare professionals make more informed decisions.</p1><br>
 
-These tools are accessed using their API services.
+---
 
-# Algorithm Overview
-Step-by-Step Algorithm for Multi-AI Integration
+# 5. AI Tools Used
 
-Step 1: Install necessary Python libraries such as requests and pandas.
+<ul>
+<li><b>ChatGPT</b> – Provides detailed explanations and recommendations.</li>
+<li><b>Claude</b> – Generates analytical and structured responses.</li>
+<li><b>Gemini</b> – Produces concise and fast responses.</li>
+</ul><br>
 
-Step 2: Configure API keys for each AI platform.
+---
 
-Step 3: Accept healthcare-related input such as patient symptoms.
+# 6. Algorithm Steps
 
-Step 4: Prepare different prompt formats for sending to AI systems.
+1. Identify the problem statement.
+2. Design prompts for generating Python API integration code.
+3. Create prompts for comparing AI-generated responses.
+4. Design prompts for generating insights and recommendations.
+5. Execute prompts using AI tools.
+6. Record generated code and explanations.
+7. Compare outputs from multiple AI systems.
+8. Evaluate response quality and usefulness.
+9. Analyze the effectiveness of prompts.
+10. Document conclusions and reflections.
 
-Step 5: Send the prompts to ChatGPT, Claude, and Gemini APIs.
+---
 
-Step 6: Receive responses generated by each AI system.
+# 7. Prompt Design – Stage 1
 
-Step 7: Extract important information such as diagnosis and recommended actions.
+## Prompt for Generating Python Code
 
-Step 8: Compare the responses using evaluation metrics.
+<p1><b>Prompt:</b></p>
 
-Step 9: Generate insights about which AI system performs better.
+<p1>
+"Generate a Python program that connects with ChatGPT, Claude, and Gemini APIs.  
+The program should:
+<ul>
+<li>Accept healthcare-related symptoms as input.</li>
+<li>Send the same prompt to all AI systems.</li>
+<li>Collect responses from each AI tool.</li>
+<li>Display the outputs in a structured format using pandas.</li>
+<li>Use Python requests library for API communication."</li>
+</ul>
+</p1><br>
 
-Step 10: Display the results in tabular format.
+---
 
-# Prompt Types
-# 1. Direct Prompt
+# 8. AI-Generated Response – Python Code
 
-A simple prompt where symptoms are given directly and the AI system suggests the diagnosis and treatment.
-
-Example:
-"Patient has high fever, cough, and breathing difficulty. What is the possible diagnosis and treatment?"
-
-# 2. Structured Table Prompt
-
-The symptoms are provided in a table format to help AI understand the data clearly.
-
-Example:
-
-Symptom | Status
-Fever | Yes
-Cough | Yes
-Headache | No
-Breathing Difficulty | Yes
-
-Query:
-"Based on this symptom table, suggest a possible diagnosis."
-
-# 3. Incomplete Sentence Prompt
-
-The AI system completes a sentence based on the given medical symptoms.
-
-Example:
-"A patient experiencing fever and cough may be suffering from ______."
-
-Example Queries & Responses
-1. Direct Prompt
-
-Prompt:
-Patient has fever, cough, and breathing difficulty. Suggest a possible diagnosis.
-
-AI Tool	Response
-ChatGPT	May indicate pneumonia or respiratory infection. Suggest medical examination and antibiotics if required.
-Claude	Could indicate viral infection or COVID-19. Recommends testing and monitoring oxygen level.
-Gemini	Likely respiratory infection. Suggest chest X-ray and consultation with a doctor.
-2. Structured Prompt
-
-# Prompt:
-
-Symptom | Present
-Fever | Yes
-Cough | Yes
-Chest Pain | No
-Breathing Difficulty | Yes
-
-# AI Tool	Response
-ChatGPT	Possible pneumonia or viral infection.
-Claude	Possible COVID-19 or lung infection.
-Gemini	Possible bacterial or viral respiratory infection.
-3. Missing Word Prompt
-
-# Prompt:
-"A patient suffering from fever and cough may have ______."
-
-AI Tool	Response
-ChatGPT	Respiratory infection
-Claude	Viral pneumonia
-Gemini	Pneumonia
-Code Implementation
-# Python Code for Multi-AI Integration
-```
+```python
 import requests
 import pandas as pd
 
@@ -141,66 +98,260 @@ GEMINI_API_KEY = "your_gemini_api_key"
 
 def get_chatgpt_response(prompt):
     url = "https://api.openai.com/v1/chat/completions"
-    headers = {"Authorization": f"Bearer {CHATGPT_API_KEY}"}
-    data = {"model": "gpt-4", "messages": [{"role": "user", "content": prompt}]}
+    headers = {
+        "Authorization": f"Bearer {CHATGPT_API_KEY}"
+    }
+
+    data = {
+        "model": "gpt-4",
+        "messages": [{"role": "user", "content": prompt}]
+    }
+
     response = requests.post(url, json=data, headers=headers)
     return response.json()
 
 def get_claude_response(prompt):
     url = "https://api.claude.ai/v1/complete"
-    headers = {"Authorization": f"Bearer {CLAUDE_API_KEY}"}
-    data = {"prompt": prompt}
+
+    headers = {
+        "Authorization": f"Bearer {CLAUDE_API_KEY}"
+    }
+
+    data = {
+        "prompt": prompt
+    }
+
     response = requests.post(url, json=data, headers=headers)
     return response.json()
 
 def get_gemini_response(prompt):
     url = "https://api.gemini.ai/v1/generate"
-    headers = {"Authorization": f"Bearer {GEMINI_API_KEY}"}
-    data = {"prompt": prompt}
+
+    headers = {
+        "Authorization": f"Bearer {GEMINI_API_KEY}"
+    }
+
+    data = {
+        "prompt": prompt
+    }
+
     response = requests.post(url, json=data, headers=headers)
     return response.json()
 
-prompt = "Patient has fever, cough, and breathing difficulty. Suggest possible diagnosis."
+prompt = "Patient has fever, cough, and breathing difficulty."
 
 chatgpt = get_chatgpt_response(prompt)
 claude = get_claude_response(prompt)
 gemini = get_gemini_response(prompt)
 
-print("ChatGPT:", chatgpt)
-print("Claude:", claude)
-print("Gemini:", gemini)
+results = pd.DataFrame({
+    "AI Tool": ["ChatGPT", "Claude", "Gemini"],
+    "Response": [chatgpt, claude, gemini]
+})
+
+print(results)
 ```
-# Evaluation
 
-The outputs generated by the AI tools are evaluated using the following metrics.
+---
 
-# Accuracy
+# 9. Prompt Design – Stage 2
 
-Measures whether the diagnosis and suggestions given by the AI system are correct.
+## Prompt for Comparing Outputs
 
-# Clarity
+<p1><b>Prompt:</b></p>
 
-Checks how clearly the response explains the diagnosis and treatment.
+<p1>
+"Compare the healthcare diagnosis responses generated by ChatGPT, Claude, and Gemini.  
+Highlight:
+<ul>
+<li>Differences in diagnosis accuracy</li>
+<li>Response clarity</li>
+<li>Level of detail</li>
+<li>Practical usefulness</li>
+</ul>
+Present the comparison in tabular format."
+</p1><br>
 
-# Simplicity
+---
 
-Determines whether the explanation is easy for users to understand.
+# 10. AI-Generated Comparison Response
 
-# Response Quality
+<table>
+<tr>
+<th>AI Tool</th>
+<th>Diagnosis Quality</th>
+<th>Clarity</th>
+<th>Detail Level</th>
+<th>Usefulness</th>
+</tr>
 
-Evaluates the usefulness and completeness of the AI response.
+<tr>
+<td>ChatGPT</td>
+<td>Highly Accurate</td>
+<td>Very Clear</td>
+<td>Detailed</td>
+<td>Highly Informative</td>
+</tr>
 
-# Result Presentation
-AI Tool	Accuracy	Clarity	Simplicity	Response Quality
-ChatGPT	High	High	Easy	Informative
-Claude	High	High	Moderate	Detailed
-Gemini	High	Moderate	Simple	Concise
-# Conclusion
+<tr>
+<td>Claude</td>
+<td>Accurate</td>
+<td>Structured</td>
+<td>Analytical</td>
+<td>Useful for Research</td>
+</tr>
 
-This experiment demonstrates how Python can be used to interact with multiple AI platforms and analyze their responses. By sending the same prompt to different AI systems, we can compare their outputs and understand their strengths and weaknesses.
+<tr>
+<td>Gemini</td>
+<td>Moderately Accurate</td>
+<td>Simple</td>
+<td>Concise</td>
+<td>Quick Understanding</td>
+</tr>
 
-Such systems are useful in healthcare applications where multiple AI opinions can support better decision-making.
+</table><br>
 
-Result
+---
 
-The Python program was successfully executed and the responses from multiple AI tools were obtained and compared.
+# 11. Prompt Design – Stage 3
+
+## Prompt for Generating Insights
+
+<p1><b>Prompt:</b></p>
+
+<p1>
+"Analyze the comparison results of ChatGPT, Claude, and Gemini healthcare responses.  
+Suggest:
+<ul>
+<li>Which AI tool is best for healthcare support systems</li>
+<li>Which AI tool gives the clearest explanation</li>
+<li>Which AI tool is suitable for fast responses</li>
+<li>Possible improvements for the system</li>
+</ul>"
+</p1><br>
+
+---
+
+# 12. AI-Generated Insights
+
+<p1>
+Based on the comparison:
+<ul>
+<li>ChatGPT is best suited for healthcare support systems because it provides detailed and informative responses.</li>
+<li>Claude performs well in analytical reasoning and structured explanations.</li>
+<li>Gemini is useful when quick and concise responses are required.</li>
+<li>The system can be improved by combining responses from multiple AI systems for better medical decision support.</li>
+</ul>
+</p1><br>
+
+---
+
+# 13. Prompt Types Used
+
+## 1. Direct Prompt
+
+<p1>A direct instruction asking the AI to generate Python code for multi-AI API integration.</p1><br>
+
+### Example:
+
+<p1>"Generate Python code to connect ChatGPT, Claude, and Gemini APIs."</p1><br>
+
+---
+
+## 2. Structured Prompt
+
+<p1>A detailed prompt containing clear tasks, bullet points, and output requirements.</p1><br>
+
+### Example:
+
+<p1>
+"Compare AI responses based on:
+<ul>
+<li>Accuracy</li>
+<li>Clarity</li>
+<li>Usefulness</li>
+</ul>"
+</p1><br>
+
+---
+
+## 3. Analytical Prompt
+
+<p1>A reasoning-based prompt used for generating insights and recommendations.</p1><br>
+
+### Example:
+
+<p1>"Analyze which AI system performs best for healthcare diagnosis support."</p1><br>
+
+---
+
+# 14. Evaluation of Prompt Effectiveness
+
+<table>
+<tr>
+<th>Prompt Stage</th>
+<th>Effectiveness</th>
+<th>Observation</th>
+</tr>
+
+<tr>
+<td>Code Generation Prompt</td>
+<td>High</td>
+<td>Generated complete API integration code successfully.</td>
+</tr>
+
+<tr>
+<td>Comparison Prompt</td>
+<td>Very High</td>
+<td>Produced clear comparative analysis in table format.</td>
+</tr>
+
+<tr>
+<td>Insight Generation Prompt</td>
+<td>High</td>
+<td>Generated meaningful conclusions and recommendations.</td>
+</tr>
+
+</table><br>
+
+---
+
+# 15. Reflection Note
+
+<p1>This experiment demonstrated the importance of designing clear and structured prompts for AI systems. The prompts used for generating Python code successfully guided the AI to produce meaningful and organized outputs. Structured prompts with bullet points and clear requirements produced better responses compared to simple prompts.</p1><br>
+
+<p1>The comparison prompt was highly effective because it clearly specified evaluation criteria such as clarity, accuracy, and usefulness. The insight-generation prompt also produced practical recommendations for improving healthcare AI systems.</p1><br>
+
+<p1>In future improvements, prompts can be refined further by:
+
+<ul>
+<li>Adding stricter formatting requirements</li>
+<li>Including sample outputs</li>
+<li>Specifying evaluation metrics more clearly</li>
+<li>Requesting error handling and security improvements in generated code</li>
+</ul>
+</p1><br>
+
+---
+
+# 16. Advantages of Multi-AI Integration
+
+<ul>
+<li>Allows comparison of multiple AI responses.</li>
+<li>Improves decision-making quality.</li>
+<li>Helps identify strengths and weaknesses of AI systems.</li>
+<li>Useful for healthcare, education, and research applications.</li>
+<li>Supports development of intelligent assistant systems.</li>
+</ul><br>
+
+---
+
+# 17. Conclusion
+
+<p1>This experiment successfully demonstrated how prompts can guide AI tools to generate Python code for multi-AI integration, compare outputs, and produce useful insights. The experiment highlights the importance of prompt engineering in obtaining high-quality AI-generated responses. It also shows how multiple AI systems can work together to support healthcare analysis and intelligent decision-making.</p1><br>
+
+---
+
+# RESULT:
+
+<p1>The prompts were successfully designed and executed. The AI-generated Python code, comparison analysis, and insights were obtained successfully, demonstrating effective prompt engineering for multi-AI integration systems.</p1><br>
